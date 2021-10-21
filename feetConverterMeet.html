@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label> <input id="input1" size="20" placeholder="Hay nhap meet ro feet"></label><br>
+<button type="button" onclick="meterConverterFeet()"> Meet --> Feet</button>
+<br>
+<button type="button" onclick="feetConverterMeter()"> Feet --> Meet</button>
+<br>
+<div id="hienthi"></div>
+
+<script>
+
+
+    function meterConverterFeet(){
+        let meter1 = parseInt(document.getElementById('input1').value) ;
+        let foot = 3.297 * meter1;
+        document.getElementById('hienthi').innerHTML = foot;
+        return foot;
+
+    }
+    function feetConverterMeter(){
+        let feet1 = + document.getElementById('input1').value;
+        let meter = 0.305 * feet1;
+        document.getElementById('hienthi').innerHTML = meter;
+        return meter;
+    }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

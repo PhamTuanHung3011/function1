@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    function converterTemperature(a){
+        let b = (a-32)/1.8;
+        return b;
+    }
+
+    let converter = parseFloat(prompt('Nhap do F!')) ;
+    let answer =  converterTemperature(converter);
+    alert(converter+ ' do F bang'+ answer + ' do C');
+
+
+</script>
+
+
+</body>
+</html>

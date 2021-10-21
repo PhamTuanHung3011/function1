@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // let number1 = parseFloat(prompt(' so'))
+
+    // function total() {
+    //     let tong = 0;
+    //     for (let i = 2; i < 500; i++) {
+    //         if (i % 2 === 0 && i % 3 === 0) {
+    //             tong = tong + i;
+    //         }
+    //
+    //     }return (tong);
+    // }
+    //  alert(total());
+
+    function giaTri() {
+        let array1 = [];
+        let count = 0;
+        let i = 55;
+        while (count < 20) {
+            if (i % 5 === 0) {
+                count++;
+                array1.push(i)
+            }
+            i++;
+        }
+        return array1;
+            }
+
+    document.write( giaTri());
+
+</script>
+
+
+</body>
+</html>
